@@ -1,0 +1,22 @@
+package var2;
+
+import java.util.Scanner;
+
+public class lesson5exercise6 {
+	static String add(String x, int y, double z) {
+	return x+Integer.toString(y)+Double.toString(z);
+	}
+	
+	public static void main(String[] args)	{
+		Scanner scanner = new Scanner(System.in);
+		System.out.print("Введите строку: ");
+		String s= scanner.nextLine();
+		System.out.print("Введите Int: ");
+		int x= scanner.nextInt();
+		System.out.print("Введите Double: ");
+		Double y= scanner.nextDouble();
+		System.out.println("Result: " + add(s,x,y));
+	scanner.close();
+	}
+	 
+}

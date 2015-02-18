@@ -1,0 +1,46 @@
+package var2;
+
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class lesson5exercise9{
+	static String arr3 (int[] k,int [] k1){
+		int[] arr = new int [k.length+k1.length];
+		for(int i=0;i<k.length;i++)
+		{
+			arr[i] = k[i];
+			
+		}
+		for(int i=k.length,j=0;i<arr.length;i++,j++)
+		{
+			arr[i] = k1[j];
+			
+		}
+		return Arrays.toString(arr);
+	}
+	public static void main(String[] args)	{
+		Scanner scanner = new Scanner(System.in);
+		System.out.print("Введите длину массива 1: ");
+		int m = scanner.nextInt();
+		int [] arr1 = new int [m];
+		System.out.println("Введите массив из " + m + " элементов" );
+		
+		for(int i=0;i<arr1.length;i++)
+		{
+			arr1[i] = scanner.nextInt();
+		}
+		System.out.print("Введите длину массива 2: ");
+		int n = scanner.nextInt();
+		int [] arr2 = new int [n];
+		System.out.println("Введите массив из " + m + " элементов" );
+		
+		for(int i=0;i<arr2.length;i++)
+		{
+			arr2[i] = scanner.nextInt();
+		}
+		System.out.println(arr3(arr1,arr2));
+	scanner.close();
+	}
+	 
+}
